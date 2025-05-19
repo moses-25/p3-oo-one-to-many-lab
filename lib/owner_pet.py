@@ -1,6 +1,5 @@
 class Pet:
-    PET_TYPES = ["Dog", "Cat", "Rodent", "Bird", "Reptile", "Exotic"]"
-    ]
+    PET_TYPES = ["Dog", "Cat", "Rodent", "Bird", "Reptile", "Exotic"]
     all = []
     def __init__(self, name, pet_type, owner = None):
         if pet_type not in pet.PET_TYPES:
