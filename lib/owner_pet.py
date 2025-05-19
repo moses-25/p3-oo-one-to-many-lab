@@ -8,7 +8,6 @@ class Pet:
         self.name = name
         self.owner = owner
         Pet.all.append(self)
-        pass
 
 class Owner:
     def __init__(self, name):
@@ -19,9 +18,8 @@ class Owner:
 
     def add_pet(self, pet):
         if not isinstance(self, pet):
-            raise Exception("The pet is not an instance of the Pet")
+            raise Exception("pet must be an instance of Pet")
         pet.owner = self
 
     def get_sorted_pets(self):
         return sorted(self.pet(), key=lambda pet: pet.name)
-    pass
